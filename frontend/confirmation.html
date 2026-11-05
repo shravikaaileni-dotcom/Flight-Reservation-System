@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBook | Booking Confirmation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">✈ SkyBook</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="flights.html">Flights</a>
+            <a href="bookings.html">My Bookings</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="results-section">
+        <div class="search-summary confirmation-details">
+            <h1>Booking Confirmation</h1>
+            <h2>🎉 Your booking details</h2>
+
+            <p>Booking Status: <strong id="confirm-status">-</strong></p>
+            <p>Passenger Name: <span id="confirm-name">-</span></p>
+            <p>Age: <span id="confirm-age">-</span></p>
+            <p>Gender: <span id="confirm-gender">-</span></p>
+            <p>Email: <span id="confirm-email">-</span></p>
+            <p>Flight Number: <span id="confirm-flight">-</span></p>
+            <p>Selected Seats: <span id="confirm-seats">-</span></p>
+        </div>
+
+        <button id="download-ticket" class="btn">
+            Download E-Ticket
+        </button>
+
+        <a href="index.html" class="select-btn">Back to Home</a>
+        <a href="bookings.html" class="select-btn">My Bookings</a>
+    </section>
+
+    <footer>
+        <p>© 2026 SkyBook Flight Reservation System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

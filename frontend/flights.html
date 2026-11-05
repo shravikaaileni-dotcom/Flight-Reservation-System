@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBook | Available Flights</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>SkyBook</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="bookings.html">My Bookings</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Available Flights</h2>
+
+    <p>From: <span id="source-display"></span></p>
+    <p>To: <span id="destination-display"></span></p>
+    <p>Date: <span id="travel-date"></span></p>
+    <p>Passengers: <span id="passenger-count"></span></p>
+    <p>Travel Class: <span id="class-display"></span></p>
+
+    <h3 id="economy-heading">Economy Class</h3>
+
+    <div class="flight-card" data-source="Hyderabad" data-destination="Mumbai">
+        <h3>IndiGo - 6E-204</h3>
+        <p>Hyderabad → Mumbai</p>
+        <p>Departure: 06:00 AM | Arrival: 07:30 AM</p>
+        <p>Economy | ₹4,500</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="6E-204" data-airline="IndiGo"
+           data-class="Economy" data-fare="4500"
+           data-departure="06:00 AM" data-arrival="07:30 AM">Select Flight</a>
+    </div>
+    
+<!-- Mumbai to Kolkata -->
+<div class="flight-card" data-source="Mumbai" data-destination="Kolkata">
+    <h3>IndiGo - 6E-820</h3>
+    <p>Mumbai → Kolkata</p>
+    <p>Departure: 09:30 AM | Arrival: 12:15 PM</p>
+    <p>Economy | ₹5,600</p>
+    <a href="passenger.html" class="select-btn"
+       data-flight="6E-820" data-airline="IndiGo"
+       data-class="Economy" data-fare="5600"
+       data-departure="09:30 AM" data-arrival="12:15 PM">Select Flight</a>
+</div>
+
+
+    <div class="flight-card" data-source="Delhi" data-destination="Mumbai">
+        <h3>Air India - AI-560</h3>
+        <p>Delhi → Mumbai</p>
+        <p>Departure: 08:00 AM | Arrival: 10:10 AM</p>
+        <p>Economy | ₹5,200</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="AI-560" data-airline="Air India"
+           data-class="Economy" data-fare="5200"
+           data-departure="08:00 AM" data-arrival="10:10 AM">Select Flight</a>
+    </div>
+
+    <div class="flight-card" data-source="Chennai" data-destination="Bengaluru">
+        <h3>Akasa Air - QP-1320</h3>
+        <p>Chennai → Bengaluru</p>
+        <p>Departure: 09:00 AM | Arrival: 10:00 AM</p>
+        <p>Economy | ₹4,800</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="QP-1320" data-airline="Akasa Air"
+           data-class="Economy" data-fare="4800"
+           data-departure="09:00 AM" data-arrival="10:00 AM">Select Flight</a>
+    </div>
+
+    <div class="flight-card" data-source="Mumbai" data-destination="Delhi">
+        <h3>IndiGo - 6E-315</h3>
+        <p>Mumbai → Delhi</p>
+        <p>Departure: 11:00 AM | Arrival: 01:10 PM</p>
+        <p>Economy | ₹4,900</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="6E-315" data-airline="IndiGo"
+           data-class="Economy" data-fare="4900"
+           data-departure="11:00 AM" data-arrival="01:10 PM">Select Flight</a>
+    </div>
+
+    <div class="flight-card" data-source="Hyderabad" data-destination="Delhi">
+        <h3>Air India - AI-720</h3>
+        <p>Hyderabad → Delhi</p>
+        <p>Departure: 01:00 PM | Arrival: 03:15 PM</p>
+        <p>Economy | ₹5,500</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="AI-720" data-airline="Air India"
+           data-class="Economy" data-fare="5500"
+           data-departure="01:00 PM" data-arrival="03:15 PM">Select Flight</a>
+    </div>
+
+    <div class="flight-card" data-source="Bengaluru" data-destination="Chennai">
+        <h3>IndiGo - 6E-410</h3>
+        <p>Bengaluru → Chennai</p>
+        <p>Departure: 02:00 PM | Arrival: 03:00 PM</p>
+        <p>Economy | ₹3,900</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="6E-410" data-airline="IndiGo"
+           data-class="Economy" data-fare="3900"
+           data-departure="02:00 PM" data-arrival="03:00 PM">Select Flight</a>
+    </div>
+
+    <div class="flight-card" data-source="Kolkata" data-destination="Delhi">
+        <h3>Air India - AI-830</h3>
+        <p>Kolkata → Delhi</p>
+        <p>Departure: 04:00 PM | Arrival: 06:20 PM</p>
+        <p>Economy | ₹5,000</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="AI-830" data-airline="Air India"
+           data-class="Economy" data-fare="5000"
+           data-departure="04:00 PM" data-arrival="06:20 PM">Select Flight</a>
+    </div>
+
+    <div class="flight-card" data-source="Delhi" data-destination="Hyderabad">
+        <h3>IndiGo - 6E-510</h3>
+        <p>Delhi → Hyderabad</p>
+        <p>Departure: 06:00 PM | Arrival: 08:15 PM</p>
+        <p>Economy | ₹4,700</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="6E-510" data-airline="IndiGo"
+           data-class="Economy" data-fare="4700"
+           data-departure="06:00 PM" data-arrival="08:15 PM">Select Flight</a>
+    </div>
+
+    <h3 id="first-class-heading">First Class</h3>
+    
+    <!-- Additional Economy Flight 1 -->
+    <div class="flight-card" data-source="Delhi" data-destination="Kolkata">
+        <h3>Air India - AI-840</h3>
+        <p>Delhi → Kolkata</p>
+        <p>Departure: 08:30 AM | Arrival: 10:45 AM</p>
+        <p>Economy | ₹5,300</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="AI-840" data-airline="Air India"
+           data-class="Economy" data-fare="5300"
+           data-departure="08:30 AM" data-arrival="10:45 AM">Select Flight</a>
+    </div>
+
+    <!-- Additional Economy Flight 2 -->
+    <div class="flight-card" data-source="Hyderabad" data-destination="Chennai">
+        <h3>IndiGo - 6E-620</h3>
+        <p>Hyderabad → Chennai</p>
+        <p>Departure: 10:30 AM | Arrival: 11:45 AM</p>
+        <p>Economy | ₹4,200</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="6E-620" data-airline="IndiGo"
+           data-class="Economy" data-fare="4200"
+           data-departure="10:30 AM" data-arrival="11:45 AM">Select Flight</a>
+    </div>
+
+    <!-- Additional Economy Flight 3 -->
+    <div class="flight-card" data-source="Mumbai" data-destination="Bengaluru">
+        <h3>Air India - AI-920</h3>
+        <p>Mumbai → Bengaluru</p>
+        <p>Departure: 01:30 PM | Arrival: 03:00 PM</p>
+        <p>Economy | ₹5,100</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="AI-920" data-airline="Air India"
+           data-class="Economy" data-fare="5100"
+           data-departure="01:30 PM" data-arrival="03:00 PM">Select Flight</a>
+    </div>
+
+    <!-- Additional Economy Flight 4 -->
+    <div class="flight-card" data-source="Chennai" data-destination="Hyderabad">
+        <h3>IndiGo - 6E-710</h3>
+        <p>Chennai → Hyderabad</p>
+        <p>Departure: 04:30 PM | Arrival: 05:45 PM</p>
+        <p>Economy | ₹4,300</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="6E-710" data-airline="IndiGo"
+           data-class="Economy" data-fare="4300"
+           data-departure="04:30 PM" data-arrival="05:45 PM">Select Flight</a>
+    </div>
+
+
+    <div class="flight-card" data-source="Delhi" data-destination="Mumbai">
+        <h3>SkyBook Airways - SB-101</h3>
+        <p>Delhi → Mumbai</p>
+        <p>Departure: 07:00 AM | Arrival: 09:10 AM</p>
+        <p>First Class | ₹25,000</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="SB-101" data-airline="SkyBook Airways"
+           data-class="First Class" data-fare="25000"
+           data-departure="07:00 AM" data-arrival="09:10 AM">Select Flight</a>
+    </div>
+
+    <div class="flight-card" data-source="Hyderabad" data-destination="Abu Dhabi">
+        <h3>SkyBook Airways - SB-202</h3>
+        <p>Hyderabad → Abu Dhabi</p>
+        <p>Departure: 10:00 AM | Arrival: 12:30 PM</p>
+        <p>First Class | ₹32,000</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="SB-202" data-airline="SkyBook Airways"
+           data-class="First Class" data-fare="32000"
+           data-departure="10:00 AM" data-arrival="12:30 PM">Select Flight</a>
+    </div>
+
+    <div class="flight-card" data-source="Mumbai" data-destination="Delhi">
+        <h3>SkyBook Airways - SB-303</h3>
+        <p>Mumbai → Delhi</p>
+        <p>Departure: 02:00 PM | Arrival: 04:10 PM</p>
+        <p>First Class | ₹27,000</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="SB-303" data-airline="SkyBook Airways"
+           data-class="First Class" data-fare="27000"
+           data-departure="02:00 PM" data-arrival="04:10 PM">Select Flight</a>
+    </div>
+
+    <div class="flight-card" data-source="Hyderabad" data-destination="Delhi">
+        <h3>SkyBook Airways - SB-404</h3>
+        <p>Hyderabad → Delhi</p>
+        <p>Departure: 05:00 PM | Arrival: 07:15 PM</p>
+        <p>First Class | ₹24,000</p>
+        <a href="passenger.html" class="select-btn"
+           data-flight="SB-404" data-airline="SkyBook Airways"
+           data-class="First Class" data-fare="24000"
+           data-departure="05:00 PM" data-arrival="07:15 PM">Select Flight</a>
+    </div>
+
+    <p id="no-flights-message" style="display:none;">
+        Sorry! No flights available for this route and class.
+    </p>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #17243a;
+    line-height: 1.6;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    background: #071b3a;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar nav a:hover {
+    color: #f5b942;
+}
+
+.navbar nav .nav-btn {
+    background: #f5b942;
+    color: #071b3a;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 420px;
+    background: linear-gradient(
+        120deg,
+        #071b3a,
+        #123b69
+    );
+
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #f5b942;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:last-child {
+    font-size: 18px;
+    color: #dce5f2;
+    max-width: 550px;
+}
+
+
+/* Search Section */
+
+.search-section {
+    background: white;
+    width: 86%;
+    max-width: 1200px;
+    margin: -55px auto 60px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+
+.search-section h2 {
+    color: #071b3a;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.search-section > p {
+    color: #68758a;
+    margin-bottom: 25px;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #071b3a;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+    color: #17243a;
+    cursor: pointer;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    outline: 2px solid #f5b942;
+    border-color: #123b69;
+}
+
+
+/* Search Button */
+
+.primary-btn {
+    grid-column: 1 / -1;
+    background: #f5b942;
+    color: #071b3a;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #e5a92e;
+    transform: translateY(-2px);
+}
+
+
+/* Features Section */
+
+.features {
+    padding: 35px 7% 70px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 30px;
+    color: #071b3a;
+    margin-bottom: 35px;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+}
+
+.feature-card span {
+    font-size: 38px;
+}
+
+.feature-card h3 {
+    color: #071b3a;
+    margin: 15px 0 10px;
+}
+
+.feature-card p {
+    color: #68758a;
+}
+
+
+/* Footer */
+
+footer {
+    background: #071b3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .search-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 40px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .search-section {
+        width: 92%;
+        padding: 22px;
+    }
+
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Make user input boxes shorter and centered */
+
+/* Medium-sized centered input boxes */
+
+.auth-form .form-group {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.auth-form .form-group input {
+    width: 100%;
+    height: 43px;
+    padding: 10px 13px;
+    font-size: 14px;
+}
+
+.auth-form .primary-btn {
+    width: 100%;
+    max-width: 340px;
+    height: 45px;
+    margin: 8px auto 0;
+}
+
+/* Flight Results Page */
+
+.results-section {
+    width: 88%;
+    max-width: 1150px;
+    margin: 50px auto;
+}
+
+.results-section h1 {
+    color: #071b3a;
+    font-size: 34px;
+}
+
+.results-section > p {
+    color: #68758a;
+    margin-bottom: 25px;
+}
+
+.search-summary {
+    background: #e8eef7;
+    padding: 22px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.search-summary h3 {
+    margin-bottom: 10px;
+    color: #071b3a;
+}
+
+.search-summary p {
+    margin: 5px 0;
+}
+
+.flight-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.flight-card h3 {
+    color: #071b3a;
+}
+
+.flight-card h2 {
+    color: #123b69;
+    margin-bottom: 12px;
+}
+
+.flight-card p {
+    color: #68758a;
+}
+
+.select-btn {
+    display: inline-block;
+    background: #f5b942;
+    color: #071b3a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.select-btn:hover {
+    background: #e5a92e;
+}
+
+.back-btn {
+    display: inline-block;
+    margin: 15px 0;
+    color: #123b69;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .flight-card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* Fix Flight Search Dropdowns */
+
+.search-form select {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 45px;
+    background-color: #ffffff;
+    color: #17243a;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-form select option {
+    display: block;
+    background-color: #ffffff;
+    color: #17243a;
+}
+.cancel-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.cancel-btn:hover {
+    background: #b02a37;
+}
+
+/* =================================
+   SKYBOOK SEAT SELECTION
+================================= */
+
+.seat-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.seat {
+    width: 42px;
+    height: 38px;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+    background: white;
+    color: #2563eb;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.seat.selected {
+    background: #2563eb;
+    color: white;
+}
+
+.seat.booked {
+    background: #999;
+    color: white;
+    border-color: #999;
+    cursor: not-allowed;
+}
+
+.seat-legend {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    margin: 0 4px 0 10px;
+}
+
+.available-legend {
+    background: white;
+    border: 1px solid #2563eb;
+}
+
+.selected-legend {
+    background: #2563eb;
+}
+
+.booked-legend {
+    background: #999;
+}

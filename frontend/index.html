@@ -1,0 +1,195 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkyBook | Flight Reservation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">✈ SkyBook</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="flights.html">Flights</a>
+            <a href="bookings.html">My Bookings</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-btn">Register</a>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">
+                EXPLORE THE WORLD WITH SKYBOOK
+            </p>
+
+            <h1>
+                Your Journey<br>
+                Begins Here.
+            </h1>
+
+            <p>
+                Discover destinations, compare flights and
+                book your next journey with ease.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Flight Search Section -->
+    <section class="search-section">
+
+        <h2>Find Your Perfect Flight</h2>
+
+        <p>
+            Search and book your flights in just a few steps.
+        </p>
+
+        <form action="flights.html"
+              method="GET"
+              class="search-form">
+
+            <!-- From -->
+            <div class="form-group">
+
+                <label for="source">From</label>
+
+                <select id="source" name="source" required>
+                    <option value="">Select origin</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Abu Dhabi">Abu Dhabi</option>
+                </select>
+
+            </div>
+
+            <!-- To -->
+            <div class="form-group">
+
+                <label for="destination">To</label>
+
+                <select id="destination" name="destination" required>
+                    <option value="">Select destination</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Abu Dhabi">Abu Dhabi</option>
+                </select>
+
+            </div>
+
+            <!-- Travel Date -->
+            <div class="form-group">
+
+                <label for="date">Departure Date</label>
+
+                <input type="date"
+                       id="date"
+                       name="date"
+                       required>
+
+            </div>
+
+            <!-- Passengers -->
+            <div class="form-group">
+
+                <label for="passengers">Passengers</label>
+
+                <select id="passengers"
+                        name="passengers"
+                        required>
+
+                    <option value="1" selected>1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                    <option value="5">5 Passengers</option>
+                    <option value="6">6 Passengers</option>
+
+                </select>
+
+            </div>
+
+            <!-- Travel Class -->
+            <div class="form-group">
+
+                <label for="travel-class">Travel Class</label>
+
+                <select id="travel-class" name="class" required>
+
+                    <option value="Economy" selected>Economy Class</option>
+                    <option value="First Class">First Class</option>
+
+                </select>
+
+            </div>
+
+            <!-- Search Button -->
+            <button type="submit" class="primary-btn">
+                Search Flights
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+
+        <h2>Why Choose SkyBook?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <span>🌍</span>
+                <h3>Multiple Destinations</h3>
+                <p>Explore flights to popular destinations.</p>
+            </div>
+
+            <div class="feature-card">
+                <span>💺</span>
+                <h3>Easy Seat Selection</h3>
+                <p>Choose your preferred seats easily.</p>
+            </div>
+
+            <div class="feature-card">
+                <span>🎫</span>
+                <h3>Quick Booking</h3>
+                <p>Manage your reservations in one place.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 SkyBook Flight Reservation System</p>
+
+        <p>Information Management System Project</p>
+
+    </footer>
+
+    <script src="js/script
